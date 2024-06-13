@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -570,8 +570,8 @@ video {
   left: 0px;
 }
 
-.left-40 {
-  left: 10rem;
+.left-48 {
+  left: 12rem;
 }
 
 .right-0 {
