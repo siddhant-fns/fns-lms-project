@@ -5,8 +5,11 @@
 # /docs   @arjun-fns
 # /scripts @arjun-fns
 
-/sanket @sanket-fns
-/lucky @luckyk-fns
+
+# change below this line only 
+
+/sanket @Sanket-fns
+/lucky @lucky-fns 
 
 # Code owner for specific files
 README.md @arjun-fns
