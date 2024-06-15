@@ -1,15 +1,6 @@
 # Code owner for the entire repository
 *       @arjun-fns
 
-# Code owner for specific directories (archived for now)
-# /docs   @arjun-fns
-# /scripts @arjun-fns
-
-
-# change below this line only 
-
-/sanket @Sanket-fns
-/lucky @lucky-fns 
-
 # Code owner for specific files
 README.md @arjun-fns
+
