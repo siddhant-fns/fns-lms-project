@@ -1,5 +1,9 @@
-# Code owner for the entire repository
+# Default code owner for the entire repository
 *       @arjun-fns
 
+# Code owners for specific directories
 /sanket/ @Sanket-fns
-/lucky/ @lucky-fns 
+/sanket/* @Sanket-fns
+
+/lucky/ @lucky-fns
+/lucky/* @lucky-fns
