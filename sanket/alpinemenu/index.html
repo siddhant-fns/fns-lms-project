@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpinemenu</title>
+  <link rel="stylesheet" href="output.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+<header x-data="{ mobileMenuOpen: false }" class="z-30 border-b border-slate-300/60 bg-transparent shadow-sm">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between py-3">
+
+    <div class="text-2xl font-bold ml-6">
+      Logo
+    </div>
+
+    <!-- Mobile menu button -->
+    <button @click="mobileMenuOpen = !mobileMenuOpen" class="mr-4 md:hidden lg:hidden">
+      <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="8" width="28" height="2" fill="#333"/>
+        <rect x="2" y="15" width="28" height="2" fill="#333"/>
+        <rect x="2" y="22" width="28" height="2" fill="#333"/>
+      </svg>
+    </button>
+
+    <!-- Desktop navigation -->
+    <div class="hidden md:flex lg:flex flex-grow justify-center">
+      <ul class="flex space-x-8 font-medium text-lg">
+        <li>
+          <a class="text-lg flex items-center whitespace-nowrap px-3 py-1 font-medium text-slate-500 transition duration-300 ease-in-out hover:text-slate-900" href="#">Menu 1</a>
+        </li>
+    
+        <li class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+          <a class="text-lg flex items-center whitespace-nowrap px-3 py-1 font-medium text-slate-500 transition duration-300 ease-in-out hover:text-slate-900" href="#">Menu 2
+            <svg
+              class="w-5 h-5 ml-2 mt-2 fill-slate-500"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+            >
+              <path d="M10 2.586 11.414 4 6 9.414.586 4 2 2.586l4 4z" />
+            </svg>
+          </a>
+          
+          <ul
+            x-show="open"
+            x-transition:enter="transition ease-out duration-200 transform"
+            x-transition:enter-start="opacity-0 -translate-y-2"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-out duration-200"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+            class="origin-top-right absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl [&[x-cloak]]:hidden"
+            x-cloak
+          >
+            <li>
+              <a class="text-slate-500 hover:text-slate-900" href="#">Dropdown 1</a>
+            </li>
+            <li class="relative" x-data="{ nestedOpen: false }" @mouseenter="nestedOpen = true" @mouseleave="nestedOpen = false">
+              <a class="text-slate-500 hover:text-slate-900 flex items-center" href="#">Dropdown 2
+                <svg
+                  class="w-4 h-4 ml-auto fill-slate-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path d="M9.29 6.71a1 1 0 011.42 0L16 12l-5.29 5.29a1 1 0 11-1.42-1.42L13.17 12 9.29 8.12a1 1 0 010-1.41z" />
+                </svg>
+              </a>
+    
+              <ul
+                x-show="nestedOpen"
+                x-transition:enter="transition ease-out duration-200 transform"
+                x-transition:enter-start="opacity-0 -translate-y-2"
+                x-transition:enter-end="opacity-100 translate-y-0"
+                x-transition:leave="transition ease-out duration-200"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                class="origin-top-left absolute top-0 left-full min-w-[240px] bg-white border border-slate-200 p-2 rounded-lg shadow-xl [&[x-cloak]]:hidden"
+                x-cloak
+              >
+                <li>
+                  <a class="text-slate-500 hover:text-slate-900" href="#">Nested Dropdown 1</a>
+                </li>
+                <li>
+                  <a class="text-slate-500 hover:text-slate-900" href="#">Nested Dropdown 2</a>
+                </li>
+                <li>
+                  <a class="text-slate-500 hover:text-slate-900" href="#">Nested Dropdown 3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="text-slate-500 hover:text-slate-900" href="#">Dropdown 3</a>
+            </li>
+            <li>
+              <a class="text-slate-500 hover:text-slate-900" href="#">Dropdown 4</a>
+            </li>
+            <li>
+              <a class="text-slate-500 hover:text-slate-900" href="#">Dropdown 5</a>
+            </li>
+            <li>
+              <a class="text-slate-500 hover:text-slate-900" href="#">Dropdown 6</a>
+            </li>
+            <li>
+              <a class="text-slate-500 hover:text-slate-900" href="#">Dropdown 7</a>
+            </li>
+            <li>
+              <a class="text-slate-500 hover:text-slate-900" href="#">Dropdown 8</a>
+            </li>
+          </ul>
+        </li>
+    
+        <li>
+          <a class="text-lg flex items-center whitespace-nowrap px-3 py-1 font-medium text-slate-500 transition duration-300 ease-in-out hover:text-slate-900" href="#">Menu 3</a>
+        </li>
+        
+        <!-- Add more navbar menus here  -->
+      </ul>
+    </div>
+    
+  </nav>
+
+  <!-- Mobile menu -->
+  <nav x-show.transition="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="md:hidden lg:hidden">
+    <ul class="space-y-1 px-2 pt-2 pb-3 border-2 text-center ">
+      <li class="block rounded-lg py-3 px-5 transition duration-300 ease-in-out text-lg font-medium text-slate-500" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Menu 1</a>
+      </li>
+      <!-- Add more mobile menu items here if needed -->
+      <li class="block rounded-lg py-3 px-4 transition duration-300 ease-in-out" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open" class="flex items-center justify-center">
+          <span class="ml-8 text-lg font-medium text-slate-500">Menu 2</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-4 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+        <!-- Dropdown items -->
+        <ul x-show.transition="open" class="ml-auto border-2 text-center mt-2 text-lg font-medium text-slate-500">
+          <li>
+            <a href="#" class="block rounded-lg py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-100">Dropdown 1</a>
+          </li>
+          <li class="block rounded-lg py-2 px-4 transition duration-300 ease-in-out" x-data="{ nestedOpen: false }" @click.stop>
+            <a href="#" @click.prevent="nestedOpen = !nestedOpen" class="flex items-center justify-center transition duration-300 ease-in-out hover:bg-gray-100">
+              <span class="ml-8">Dropdown 2</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <!-- Nested Dropdown items -->
+            <ul x-show.transition="nestedOpen" class="ml-auto border-2 text-center mt-2">
+              <li>
+                <a href="#" class="block rounded-lg py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-100">Nested Dropdown 1</a>
+              </li>
+              <li>
+                <a href="#" class="block rounded-lg py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-100">Nested Dropdown 2</a>
+              </li>
+              <!-- Add more nested dropdown items here if needed -->
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-100">Dropdown 3</a>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-100">Dropdown 4</a>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-100">Dropdown 5</a>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-100">Dropdown 6</a>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-100">Dropdown 7</a>
+          </li>
+          <li>
+            <a href="#" class="block rounded-lg py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-100">Dropdown 8</a>
+          </li>
+          <!-- Add more dropdown items here if needed -->
+        </ul>
+      </li>
+      <li class="block rounded-lg py-3 px-5 transition duration-300 ease-in-out text-lg font-medium text-slate-500" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Menu 3</a>
+      </li>
+    </ul>
+  </nav>
+  
+  
+  
+  
+
+
+</header>
+
+</body>
+</html>
