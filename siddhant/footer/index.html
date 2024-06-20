@@ -8,151 +8,155 @@
 
   <body>
     <div
-      class="lg:flex lg:items-center lg:justify-between lg:px-20 lg:my-10 px-5 my-4"
+      class="flex items-center justify-between lg:flex lg:items-center lg:justify-between lg:px-20 lg:my-10 px-5 my-4"
     >
       <h1>Home/My Account</h1>
       <h1>Welcome! <span class="text-red-500">Md Rimel</span></h1>
     </div>
-
-    <div class="w-full flex-row flow-root lg:px-20 lg:my-10 px-5 my-4">
-      <ul class="font-medium">
-        Manage My Account
-        <li class="mx-5 mt-1">
-          <a href="#" class="font-light hover:text-red-500">My Profile</a>
-        </li>
-        <li class="mx-5">
-          <a href="#" class="font-light hover:text-red-500">Address Book</a>
-        </li>
-        <li class="mx-5">
-          <a href="#" class="font-light hover:text-red-500"
-            >My Payment Options</a
-          >
-        </li>
-      </ul>
-      <ul class="font-medium my-10">
-        My Orders
-        <li class="mx-5 mt-1">
-          <a href="#" class="font-light hover:text-red-500">My Returns</a>
-        </li>
-        <li class="mx-5">
-          <a href="#" class="font-light hover:text-red-500">My Cancellations</a>
-        </li>
-      </ul>
-      <ul class="font-medium">
-        My Wish List
-      </ul>
-    </div>
-
     <div
-      class="w-full max-w-screen-lg md:flex md:justify-center lg:max-w-screen-lg absolute lg:top-28 lg:mx-52"
+      class="lg:flex lg:items-center lg:justify-between lg:px-20 lg:my-10 flex items-center justify-between px-5"
     >
-      <form
-        class="shadow-md lg:shadow-lg px-8 pt-6 pb-8 lg:px-36 lg:pt-6 lg:pb-4"
+      <div class="">
+        <ul class="font-medium">
+          Manage My Account
+          <li class="mx-5 mt-1">
+            <a href="#" class="font-light hover:text-red-500">My Profile</a>
+          </li>
+          <li class="mx-5">
+            <a href="#" class="font-light hover:text-red-500">Address Book</a>
+          </li>
+          <li class="mx-5">
+            <a href="#" class="font-light hover:text-red-500"
+              >My Payment Options</a
+            >
+          </li>
+        </ul>
+        <ul class="font-medium my-10">
+          My Orders
+          <li class="mx-5 mt-1">
+            <a href="#" class="font-light hover:text-red-500">My Returns</a>
+          </li>
+          <li class="mx-5">
+            <a href="#" class="font-light hover:text-red-500"
+              >My Cancellations</a
+            >
+          </li>
+        </ul>
+        <ul class="font-medium">
+          My Wish List
+        </ul>
+      </div>
+      <div
+        class="flex absolute top-80 lg:flex lg:absolute lg:top-24 lg:left-96"
       >
-        <div class="text-white items-center flex justify-start">
-          <h6 class="flex text-red-500">Edit Your Profile</h6>
-        </div>
+        <form
+          class="shadow-md lg:shadow-lg px-8 pt-6 pb-8 lg:px-36 lg:pt-6 lg:pb-4"
+        >
+          <div class="text-white items-center flex justify-start">
+            <h6 class="flex text-red-500">Edit Your Profile</h6>
+          </div>
 
-        <div class="flex flex-row gap-3">
-          <div class="mb-4">
-            <label class="block text-white text-sm font-bold mb-2" for="Name">
-              First Name
-            </label>
-            <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
-              id=""
-              type="text"
-              placeholder=" First Name "
-            />
+          <div class="flex flex-row gap-3">
+            <div class="mb-4 mt-2">
+              <label class="block text-black text-sm font-bold mb-2" for="Name">
+                First Name
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
+                id=""
+                type="text"
+                placeholder=" First Name "
+              />
+            </div>
+            <div class="mb-4 mt-2">
+              <label class="block text-black text-sm font-bold mb-2" for="Name">
+                Last Name
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
+                id=""
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
           </div>
-          <div class="mb-4">
-            <label class="block text-white text-sm font-bold mb-2" for="Name">
-              Last Name
-            </label>
-            <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
-              id=""
-              type="text"
-              placeholder="Last Name"
-            />
-          </div>
-        </div>
 
-        <div class="flex flex-row gap-3">
+          <div class="flex flex-row gap-3">
+            <div class="mb-4">
+              <label class="block text-black text-sm font-bold mb-2" for="Name">
+                Email
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
+                id=""
+                type="text"
+                placeholder=" xzy@gmail.com"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-black text-sm font-bold mb-2" for="Name">
+                Address
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
+                id=""
+                type="text"
+                placeholder=" 21-pune"
+              />
+            </div>
+          </div>
           <div class="mb-4">
-            <label class="block text-white text-sm font-bold mb-2" for="Name">
-              Email
+            <label
+              class="block text-black text-sm mt-4 font-bold mb-2"
+              for="Name"
+            >
+              Password Change
             </label>
             <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
-              id=""
+              id="username"
               type="text"
-              placeholder=" xzy@gmail.com"
+              placeholder="Current Password"
             />
           </div>
           <div class="mb-4">
-            <label class="block text-white text-sm font-bold mb-2" for="Name">
-              Address
-            </label>
             <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
-              id=""
+              id="username"
               type="text"
-              placeholder=" 21-pune"
+              placeholder="New Password"
             />
           </div>
-        </div>
-        <div class="mb-4">
-          <label
-            class="block text-white text-sm mt-4 font-bold mb-2"
-            for="Name"
-          >
-            Password Change
-          </label>
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
-            id="username"
-            type="text"
-            placeholder="Current Password"
-          />
-        </div>
-        <div class="mb-4">
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
-            id="username"
-            type="text"
-            placeholder="New Password"
-          />
-        </div>
-        <div class="mb-4">
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
-            id="username"
-            type="text"
-            placeholder="Confirm Password"
-          />
-        </div>
-        <div class="flex gap-5 flex-row-reverse">
-          <button
-            type="button"
-            class="text-white bg-red-500 mt-2 hover:bg-green-500 focus:ring-4 font-medium text-sm px-5 py-2.5 text-center"
-          >
-            Save Changes
-          </button>
-          <button
-            type="button"
-            class="text-white bg-[#9775FA] mt-2 hover:bg-red-500 focus:ring-4 font-medium text-sm px-5 py-2.5 text-center"
-          >
-            Cancle
-          </button>
-        </div>
-      </form>
+          <div class="mb-4">
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-[#8F959E] bg-[#F5F5F5] leading-tight focus:outline-none focus:shadow-outline"
+              id="username"
+              type="text"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="flex gap-5 flex-row-reverse">
+            <button
+              type="button"
+              class="text-white bg-red-500 mt-2 hover:bg-green-500 focus:ring-4 font-medium text-sm px-5 py-2.5 text-center"
+            >
+              Save Changes
+            </button>
+            <button
+              type="button"
+              class="text-white bg-[#9775FA] mt-2 hover:bg-red-500 focus:ring-4 font-medium text-sm px-5 py-2.5 text-center"
+            >
+              Cancle
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <!-- footer start here -->
     <footer>
       <div
-        class="flex flex-col absolute top-[124%] w-full lg:px-20 lg:my-10 px-5 my-4 bg-black text-white md:flex-row md:gap-5 lg:h-screen lg:w-full lg:flex lg:flex-row lg:absolute lg:top-[110%] lg:gap-24"
+        class="flex flex-col absolute top-[124%] w-full lg:px-20 lg:my-10 px-8 my-4 bg-black text-white md:flex-row md:gap-5 lg:h-auto md:h-80 md:top-[80%] md:w-full lg:w-full lg:flex lg:flex-row lg:absolute lg:top-[110%] lg:gap-24"
       >
         <div>
           <h6 class="mb-2 mt-10">Exclusive</h6>
@@ -166,12 +170,12 @@
           />
           <a href="#">
             <img
-              class="flex absolute top-[14%] md:top-36 left-48 lg:flex lg:absolute lg:left-64"
+              class="flex absolute top-[17%] md:top-36 left-48 lg:flex lg:absolute lg:left-64"
               src="/Vector.svg"
               alt=""
           /></a>
         </div>
-        <div class="mb-2 mt-10">
+        <div class="mb-2 mt-3 lg:mt-10">
           <ul class="mb-2">
             Support
             <li class="mt-2">111 Bijay sarani,Dhaka,<br />DH 1515 Banglore</li>
@@ -179,7 +183,7 @@
             <li class="mt-1">+88015-88888-9999</li>
           </ul>
         </div>
-        <div class="mb-2 mt-10">
+        <div class="mb-2 mt-2 lg:mt-10">
           <ul class="mb-2">
             Account
             <li class="mt-2"><a href="#">My Account</a></li>
@@ -189,7 +193,7 @@
             <li class="mt-1"><a href="#">Shop</a></li>
           </ul>
         </div>
-        <div class="mb-2 mt-10">
+        <div class="mb-2 mt-2 lg:mt-10">
           <ul class="mb-2">
             Quick Link
             <li class="mt-2"><a href="#">Privacy Policy</a></li>
@@ -199,16 +203,18 @@
           </ul>
         </div>
         <div>
-          <div class="mb-2 mt-10">
+          <div class="lg:mt-10">
             <ul class="mb-2">
               Download App
               <p class="mt-2">Save $3 With App New User Only</p>
             </ul>
           </div>
-          <div>
+          <div class="">
             <a href="#"><img src="/Qr Code.png" alt="" /></a>
           </div>
-          <div class="flex flex-col absolute top-[16.5%] left-[83%]">
+          <div
+            class="lg:flex lg:flex-col lg:absolute lg:top-[47%] lg:left-[83%] flex flex-row gap-3 absolute top-[91%] left-[36%] md:flex md:flex-col md:absolute md:top-[38%] md:left-[92%]"
+          >
             <div class="mb-1.5">
               <a href="#"
                 ><img
@@ -220,7 +226,9 @@
               <a href="#"><img src="/download-appstore.png" alt="" /></a>
             </div>
           </div>
-          <div class="flex absolute top-52 gap-8">
+          <div
+            class="flex absolute top-[96.5%] left-36 md:flex md:absolute md:top-[60%] md:left-64 md:gap-4 gap-8 lg:flex lg:absolute lg:top-[87%] lg:left-[75.5%] lg:gap-8"
+          >
             <a href="#"><img src="/Icon-Facebook.png" alt="" /></a>
             <a href="#"><img src="/icon-instagram.png" alt="" /></a>
             <a href="#"><img src="/Icon-Linkedin.png" alt="" /></a>
@@ -228,9 +236,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="bg-red-600 flex absolute">
-        <img class="" src="/Frame 67.svg" alt="" />
-      </div> -->
     </footer>
     <!-- footer end  -->
   </body>
