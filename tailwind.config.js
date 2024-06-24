@@ -4,6 +4,9 @@ module.exports = {
     content: [
        "./auth-ui/*.{html,js}",
        "./sanket/*.{html,js}",
+       "./sanket/alpinemenu/*.{html,js}",
+       "./manish/*.{html,js}",
+
     ],
     theme: {
         extend: {},

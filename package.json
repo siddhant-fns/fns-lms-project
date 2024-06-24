@@ -14,6 +14,6 @@
     "tailwind-watch": "tailwindcss -i ./input.css -o ./output.css --watch",
     "nodesass-run": "node-sass ./input.scss ./input.css --watch",
     "tailwind-build": "tailwindcss -i ./input.css -o ./output.css --minify",
-    "nodesass-build": "node-sass ./input.scss ./output.css"
+    "nodesass-build": "node-sass ./input.scss ./input.css"
   }
 }
