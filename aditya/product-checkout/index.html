@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-4">
+        <div class="flex flex-col lg:flex-row">
+            <div class="w-full lg:w-2/3 bg-white p-4 rounded shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                    <a href="#" class="text-2xl text-blue-500">&larr; Continue shopping</a>
+                    <span class="text-gray-700">You have 4 items in your cart</span>
+                    <select class="border p-2 rounded">
+                        <option value="price">Sort by: price</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="flex justify-between items-center bg-gray-50 p-4 mb-2 rounded">
+                        <div class="flex items-center">
+                            <img src="https://specials-images.forbesimg.com/imageserve/5e19e7a3da6d380006295c72//960x0.jpg?fit=scale" alt="Iphone 11 pro" class="w-16 h-16 object-cover rounded mr-4">
+                            <div>
+                                <h4 class="text-gray-800 font-semibold">Iphone 11 pro</h4>
+                                <span class="text-gray-600">256GB, Navy Blue</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-800 mr-4">2</span>
+                            <span class="text-gray-800">$900</span>
+                            <button class="ml-4 text-gray-600 hover:text-gray-900"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center bg-gray-50 p-4 mb-2 rounded">
+                        <div class="flex items-center">
+                            <img src="https://image-us.samsung.com/us/smartphones/galaxy-note10/v1/images/galaxy-note10_highlights_mobile_kv.jpg" alt="Samsung galaxy Note 10" class="w-16 h-16 object-cover rounded mr-4">
+                            <div>
+                                <h4 class="text-gray-800 font-semibold">Samsung galaxy Note 10</h4>
+                                <span class="text-gray-600">256GB, Navy Blue</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-800 mr-4">2</span>
+                            <span class="text-gray-800">$900</span>
+                            <button class="ml-4 text-gray-600 hover:text-gray-900"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center bg-gray-50 p-4 mb-2 rounded">
+                        <div class="flex items-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTMVzrdN95EFkKIuN4CXKF6OnBGrfq2iauKw&s" alt="Canon EOS M50" class="w-16 h-16 object-cover rounded mr-4">
+                            <div>
+                                <h4 class="text-gray-800 font-semibold">Canon EOS M50</h4>
+                                <span class="text-gray-600">Onyx Black</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-800 mr-4">1</span>
+                            <span class="text-gray-800">$1199</span>
+                            <button class="ml-4 text-gray-600 hover:text-gray-900"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center bg-gray-50 p-4 mb-2 rounded">
+                        <div class="flex items-center">
+                            <img src="https://images.indianexpress.com/2021/10/MacBook-Pro-20211.jpg?w=389" alt="MacBook Pro" class="w-16 h-16 object-cover rounded mr-4">
+                            <div>
+                                <h4 class="text-gray-800 font-semibold">MacBook Pro</h4>
+                                <span class="text-gray-600">1TB, Graphite</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-800 mr-4">1</span>
+                            <span class="text-gray-800">$1799</span>
+                            <button class="ml-4 text-gray-600 hover:text-gray-900"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-neutral-300 w-full lg:w-1/3 bg-white p-4 rounded shadow-lg lg:ml-4 mt-4 lg:mt-0">
+                <div class="flex flex-col items-center mb-4">
+                    <img src="icons8-mastercard-24.png" alt="User" class="w-12 h-12 object-cover rounded-full mb-2">
+                    <h3 class="text-gray-800 font-semibold">Card details</h3>
+                </div>
+                <form>
+                    <div class="flex items-center mb-4">
+                        <input type="radio" name="card_type" class="mr-2" checked>
+                        <img src="icons8-visa-24.png" alt="Card Type" class="w-10 h-10 object-cover rounded">
+                        <input type="radio" name="card_type" class="mr-2 ml-4">
+                        <img src="icons8-american-express-24.png" alt="Card Type" class="w-8 h-8 object-cover rounded">
+                        <input type="radio" name="card_type" class="mr-2 ml-4">
+                        <img src="icons8-paypal-24.png" alt="Card Type" class="w-10 h-10 object-cover rounded">
+                        <input type="radio" name="card_type" class="mr-2 ml-4">
+                        <img src="icons8-rupee-24.png" alt="Card Type" class="w-10 h-10 object-cover rounded">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Cardholder's Name</label>
+                        <input type="text" class="w-full border p-2 rounded" placeholder="Cardholder's Name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Card Number</label>
+                        <input type="text" class="w-full border p-2 rounded" placeholder="Card Number">
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="w-1/2 mr-2">
+                            <label class="block text-gray-700">Expiration</label>
+                            <input type="text" class="w-full border p-2 rounded" placeholder="MM/YY">
+                        </div>
+                        <div class="w-1/2 ml-2">
+                            <label class="block text-gray-700">Cvv</label>
+                            <input type="text" class="w-full border p-2 rounded" placeholder="CVV">
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-gray-700">Subtotal</span>
+                        <span class="text-gray-800">$4798.00</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-gray-700">Shipping</span>
+                        <span class="text-gray-800">$20.00</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-gray-700 font-semibold">Total (Incl. taxes)</span>
+                        <span class="text-gray-800 font-semibold">$4818.00</span>
+                    </div>
+                    <button type="button" class="shadow-lg w-full bg-cyan-500 font-bold text-white p-2 rounded hover:bg-cyan-600">CHECKOUT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </body>
+</html>
