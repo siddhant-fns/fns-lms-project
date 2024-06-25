@@ -1,8 +1,5 @@
 # Code owner for the entire repository
 *       @arjun-fns
 
-# Code owner for specific files
-README.md @arjun-fns
-
-/sanket @Sanket-fns
-/lucky @lucky-fns 
+/sanket @sanket-fns
+/lucky @lucky-fns
