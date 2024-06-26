@@ -2,8 +2,8 @@
 *       @arjun-fns
 
 # Code owners for specific directories
-/sanket/ @Sanket-fns @arjun-fns
-/sanket/* @Sanket-fns @arjun-fns
+# /sanket/ @Sanket-fns @arjun-fns
+# /sanket/* @Sanket-fns @arjun-fns
 
-/lucky/ @lucky-fns @arjun-fns
-/lucky/* @lucky-fns @arjun-fns
+# /lucky/ @lucky-fns @arjun-fns
+# /lucky/* @lucky-fns @arjun-fns
