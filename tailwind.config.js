@@ -12,6 +12,7 @@ module.exports = {
         "./siddhant/shoping-grid/*.{html,js}",
         "./siddhant/ord_cnf/*.{html,js}",
         "./siddhant/payment/*.{html,js}",
+        "./prashant/Login/*.{html,js}",
 
     ],
     theme: {
