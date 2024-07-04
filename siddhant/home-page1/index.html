@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="./output.css" rel="stylesheet" /> -->
+    <link href="../../output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- banner start  -->
+    <div class="container mx-auto">
+      <div class="relative overflow-hidden w-full max-w-5xl mx-auto mt-10">
+        <div
+          class="flex transition-transform duration-500 ease-in-out"
+          id="slider"
+        >
+          <div class="relative w-full flex-shrink-0">
+            <img
+              class="w-full h-full object-cover"
+              src="./img/banner-1.jpg"
+              alt="Banner 1"
+            />
+            <div
+              class="absolute left-0 lg:top-40 bottom-0 flex flex-col items-start pl-4 space-y-4"
+            >
+              <h1
+                class="text-black text-2xl font-bold lg:w-72 w-64 bg-opacity-75 p-2 rounded"
+              >
+                <span class="text-pink-400">Trending Item</span> <br />
+                WOMEN'S LATEST FASHION SALE <br />starting at $ 20.00
+              </h1>
+              <a href="#"
+                ><button class="bg-pink-400 text-white py-2 px-4 rounded">
+                  SHOP NOW
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="relative w-full flex-shrink-0">
+            <img
+              class="w-full h-full object-cover"
+              src="./img/banner-2.jpg"
+              alt="Banner 2"
+            />
+            <div
+              class="absolute left-0 lg:top-40 bottom-0 flex flex-col items-start pl-4 space-y-4"
+            >
+              <h1
+                class="text-black text-2xl font-bold lg:w-72 w-64 bg-opacity-75 p-2 rounded"
+              >
+                <span class="text-pink-400">Trending Accessories</span> <br />
+                MODERN SUNGLASSES <br />starting at $ 15.00
+              </h1>
+              <a href="#"
+                ><button class="bg-pink-400 text-white py-2 px-4 rounded">
+                  SHOP NOW
+                </button></a
+              >
+            </div>
+          </div>
+
+          <div class="relative w-full flex-shrink-0">
+            <img
+              class="w-full h-full object-cover"
+              src="./img/banner-3.jpg"
+              alt="Banner 3"
+            />
+            <div
+              class="absolute left-0 lg:top-40 bottom-0 flex flex-col items-start pl-4 space-y-4"
+            >
+              <h1
+                class="text-black text-2xl font-bold lg:w-72 w-64 bg-opacity-75 p-2 rounded"
+              >
+                <span class="text-pink-400">Sale Offer</span> <br />
+                NEW FASHION SUMMER SALE<br />starting at $ 20.00
+              </h1>
+              <a href="#"
+                ><button class="bg-pink-400 text-white py-2 px-4 rounded">
+                  SHOP NOW
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- banner end -->
+        <!-- catg start -->
+
+        <div class="category py-10 overflow-y-scroll no-scrollbar">
+          <div class="container mx-auto px-4">
+            <div
+              class="category-item-container flex overflow-x-auto space-x-4 no-scrollbar"
+            >
+              <div
+                class="category-item flex-shrink-0 bg-white p-4 rounded shadow flex items-center space-x-4"
+              >
+                <div class="category-img-box">
+                  <img
+                    src="./img/icons/dress.svg"
+                    alt="dress & frock"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <div class="category-content-box">
+                  <div
+                    class="category-content-flex flex items-center justify-between"
+                  >
+                    <h3 class="category-item-title text-lg font-semibold">
+                      Dress & frock
+                    </h3>
+                    <p class="category-item-amount text-gray-500">(53)</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="category-btn text-blue-500 hover:text-blue-700"
+                    >Show all</a
+                  >
+                </div>
+              </div>
+              <div
+                class="category-item flex-shrink-0 bg-white p-4 rounded shadow flex items-center space-x-4"
+              >
+                <div class="category-img-box">
+                  <img
+                    src="./img/icons/coat.svg"
+                    alt="winter wear"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <div class="category-content-box">
+                  <div
+                    class="category-content-flex flex items-center justify-between"
+                  >
+                    <h3 class="category-item-title text-lg font-semibold">
+                      Winter wear
+                    </h3>
+                    <p class="category-item-amount text-gray-500">(58)</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="category-btn text-blue-500 hover:text-blue-700"
+                    >Show all</a
+                  >
+                </div>
+              </div>
+              <div
+                class="category-item flex-shrink-0 bg-white p-4 rounded shadow flex items-center space-x-4"
+              >
+                <div class="category-img-box">
+                  <img
+                    src="./img/icons/glasses.svg"
+                    alt="glasses & lens"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <div class="category-content-box">
+                  <div
+                    class="category-content-flex flex items-center justify-between"
+                  >
+                    <h3 class="category-item-title text-lg font-semibold">
+                      Glasses & lens
+                    </h3>
+                    <p class="category-item-amount text-gray-500">(68)</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="category-btn text-blue-500 hover:text-blue-700"
+                    >Show all</a
+                  >
+                </div>
+              </div>
+              <div
+                class="category-item flex-shrink-0 bg-white p-4 rounded shadow flex items-center space-x-4"
+              >
+                <div class="category-img-box">
+                  <img
+                    src="./img/icons/shorts.svg"
+                    alt="shorts & jeans"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <div class="category-content-box">
+                  <div
+                    class="category-content-flex flex items-center justify-between"
+                  >
+                    <h3 class="category-item-title text-lg font-semibold">
+                      Shorts & jeans
+                    </h3>
+                    <p class="category-item-amount text-gray-500">(84)</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="category-btn text-blue-500 hover:text-blue-700"
+                    >Show all</a
+                  >
+                </div>
+              </div>
+              <div
+                class="category-item flex-shrink-0 bg-white p-4 rounded shadow flex items-center space-x-4"
+              >
+                <div class="category-img-box">
+                  <img
+                    src="./img/icons/tee.svg"
+                    alt="t-shirts"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <div class="category-content-box">
+                  <div
+                    class="category-content-flex flex items-center justify-between"
+                  >
+                    <h3 class="category-item-title text-lg font-semibold">
+                      T-shirts
+                    </h3>
+                    <p class="category-item-amount text-gray-500">(35)</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="category-btn text-blue-500 hover:text-blue-700"
+                    >Show all</a
+                  >
+                </div>
+              </div>
+              <div
+                class="category-item flex-shrink-0 bg-white p-4 rounded shadow flex items-center space-x-4"
+              >
+                <div class="category-img-box">
+                  <img
+                    src="./img/icons/jacket.svg"
+                    alt="jacket"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <div class="category-content-box">
+                  <div
+                    class="category-content-flex flex items-center justify-between"
+                  >
+                    <h3 class="category-item-title text-lg font-semibold">
+                      Jacket
+                    </h3>
+                    <p class="category-item-amount text-gray-500">(16)</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="category-btn text-blue-500 hover:text-blue-700"
+                    >Show all</a
+                  >
+                </div>
+              </div>
+              <div
+                class="category-item flex-shrink-0 bg-white p-4 rounded shadow flex items-center space-x-4"
+              >
+                <div class="category-img-box">
+                  <img
+                    src="./img/icons/watch.svg"
+                    alt="watch"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <div class="category-content-box">
+                  <div
+                    class="category-content-flex flex items-center justify-between"
+                  >
+                    <h3 class="category-item-title text-lg font-semibold">
+                      Watch
+                    </h3>
+                    <p class="category-item-amount text-gray-500">(27)</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="category-btn text-blue-500 hover:text-blue-700"
+                    >Show all</a
+                  >
+                </div>
+              </div>
+              <div
+                class="category-item flex-shrink-0 bg-white p-4 rounded shadow flex items-center space-x-4"
+              >
+                <div class="category-img-box">
+                  <img
+                    src="./img/icons/hat.svg"
+                    alt="hat & caps"
+                    class="w-8 h-8"
+                  />
+                </div>
+                <div class="category-content-box">
+                  <div
+                    class="category-content-flex flex items-center justify-between"
+                  >
+                    <h3 class="category-item-title text-lg font-semibold">
+                      Hat & caps
+                    </h3>
+                    <p class="category-item-amount text-gray-500">(39)</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="category-btn text-blue-500 hover:text-blue-700"
+                    >Show all</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- catg ends -->
+        <!-- brand img  start -->
+        <div
+          class="flex flex-col justify-center items-center gap-5 my-16 bg-primary md:flex-row md:w-2/3 lg:w-[100%]"
+        >
+          <div class="w-[118px] flex justify-center">
+            <img src="./img/brands/hm.png" alt="HM" />
+          </div>
+          <div class="w-[150px] flex justify-center">
+            <img src="img/brands/obey.png" alt="Obey" />
+          </div>
+          <div class="w-[176px] flex justify-center">
+            <img src="img/brands/shopify.png" alt="Shopify" />
+          </div>
+          <div class="w-[150px] flex justify-center">
+            <img src="img/brands/lacoste.png" alt="Lacoste" />
+          </div>
+          <div class="w-[127px] flex justify-center">
+            <img src="img/brands/levis.png" alt="Levi's" />
+          </div>
+        </div>
+        <!-- brand img  end -->
+
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-semibold mb-6">Popular Products</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:md:grid-cols-3 gap-6">
+            <!-- Product Card 1 -->
+            <div
+              class="product-card bg-white rounded-lg shadow-md overflow-hidden flex"
+            >
+              <div class="product-img-box flex-shrink-0">
+                <img
+                  src="./img/products/1.jpg"
+                  alt="Product 1"
+                  class="w-32 h-32 object-cover"
+                />
+              </div>
+              <div
+                class="product-content-box p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="product-title text-lg font-semibold mb-2">
+                    Product 1
+                  </h3>
+                  <p class="product-price text-gray-700">$49.99</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn bg-blue-500 text-white py-2 px-4 rounded-lg text-sm mt-2 hover:bg-blue-600"
+                  >View Product</a
+                >
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div
+              class="product-card bg-white rounded-lg shadow-md overflow-hidden flex"
+            >
+              <div class="product-img-box flex-shrink-0">
+                <img
+                  src="./img/products/2.jpg"
+                  alt="Product 2"
+                  class="w-32 h-32 object-cover"
+                />
+              </div>
+              <div
+                class="product-content-box p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="product-title text-lg font-semibold mb-2">
+                    Product 2
+                  </h3>
+                  <p class="product-price text-gray-700">$59.99</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn bg-blue-500 text-white py-2 px-4 rounded-lg text-sm mt-2 hover:bg-blue-600"
+                  >View Product</a
+                >
+              </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div
+              class="product-card bg-white rounded-lg shadow-md overflow-hidden flex"
+            >
+              <div class="product-img-box flex-shrink-0">
+                <img
+                  src="./img/products/3.jpg"
+                  alt="Product 3"
+                  class="w-32 h-32 object-cover"
+                />
+              </div>
+              <div
+                class="product-content-box p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="product-title text-lg font-semibold mb-2">
+                    Product 3
+                  </h3>
+                  <p class="product-price text-gray-700">$69.99</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn bg-blue-500 text-white py-2 px-4 rounded-lg text-sm mt-2 hover:bg-blue-600"
+                  >View Product</a
+                >
+              </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div
+              class="product-card bg-white rounded-lg shadow-md overflow-hidden flex"
+            >
+              <div class="product-img-box flex-shrink-0">
+                <img
+                  src="./img/products/4.jpg"
+                  alt="Product 4"
+                  class="w-32 h-32 object-cover"
+                />
+              </div>
+              <div
+                class="product-content-box p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="product-title text-lg font-semibold mb-2">
+                    Product 4
+                  </h3>
+                  <p class="product-price text-gray-700">$79.99</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn bg-blue-500 text-white py-2 px-4 rounded-lg text-sm mt-2 hover:bg-blue-600"
+                  >View Product</a
+                >
+              </div>
+            </div>
+            <!-- Product Card 5 -->
+            <div
+              class="product-card bg-white rounded-lg shadow-md overflow-hidden flex"
+            >
+              <div class="product-img-box flex-shrink-0">
+                <img
+                  src="./img/products/clothes-1.jpg"
+                  alt="Product 4"
+                  class="w-32 h-32 object-cover"
+                />
+              </div>
+              <div
+                class="product-content-box p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="product-title text-lg font-semibold mb-2">
+                    Product 4
+                  </h3>
+                  <p class="product-price text-gray-700">$79.99</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn bg-blue-500 text-white py-2 px-4 rounded-lg text-sm mt-2 hover:bg-blue-600"
+                  >View Product</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-semibold mt-4 mb-6">Trending Products</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:md:grid-cols-3 gap-6">
+            <!-- Product Card 1 -->
+            <div
+              class="product-card bg-white rounded-lg shadow-md overflow-hidden flex"
+            >
+              <div class="product-img-box flex-shrink-0">
+                <img
+                  src="img/products/belt.jpg"
+                  alt="Product 1"
+                  class="w-32 h-32 object-cover"
+                />
+              </div>
+              <div
+                class="product-content-box p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="product-title text-lg font-semibold mb-2">
+                    Product 1
+                  </h3>
+                  <p class="product-price text-gray-700">$49.99</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn bg-blue-500 text-white py-2 px-4 rounded-lg text-sm mt-2 hover:bg-blue-600"
+                  >View Product</a
+                >
+              </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div
+              class="product-card bg-white rounded-lg shadow-md overflow-hidden flex"
+            >
+              <div class="product-img-box flex-shrink-0">
+                <img
+                  src="./img/products/clothes-2.jpg"
+                  alt="Product 2"
+                  class="w-32 h-32 object-cover"
+                />
+              </div>
+              <div
+                class="product-content-box p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="product-title text-lg font-semibold mb-2">
+                    Product 2
+                  </h3>
+                  <p class="product-price text-gray-700">$59.99</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn bg-blue-500 text-white py-2 px-4 rounded-lg text-sm mt-2 hover:bg-blue-600"
+                  >View Product</a
+                >
+              </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div
+              class="product-card bg-white rounded-lg shadow-md overflow-hidden flex"
+            >
+              <div class="product-img-box flex-shrink-0">
+                <img
+                  src="./img/products/clothes-3.jpg"
+                  alt="Product 3"
+                  class="w-32 h-32 object-cover"
+                />
+              </div>
+              <div
+                class="product-content-box p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="product-title text-lg font-semibold mb-2">
+                    Product 3
+                  </h3>
+                  <p class="product-price text-gray-700">$69.99</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn bg-blue-500 text-white py-2 px-4 rounded-lg text-sm mt-2 hover:bg-blue-600"
+                  >View Product</a
+                >
+              </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div
+              class="product-card bg-white rounded-lg shadow-md overflow-hidden flex"
+            >
+              <div class="product-img-box flex-shrink-0">
+                <img
+                  src="img/products/clothes-4.jpg"
+                  alt="Product 4"
+                  class="w-32 h-32 object-cover"
+                />
+              </div>
+              <div
+                class="product-content-box p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="product-title text-lg font-semibold mb-2">
+                    Product 4
+                  </h3>
+                  <p class="product-price text-gray-700">$79.99</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn bg-blue-500 text-white py-2 px-4 rounded-lg text-sm mt-2 hover:bg-blue-600"
+                  >View Product</a
+                >
+              </div>
+            </div>
+            <!-- Product Card 5 -->
+            <div
+              class="product-card bg-white rounded-lg shadow-md overflow-hidden flex"
+            >
+              <div class="product-img-box flex-shrink-0">
+                <img
+                  src="img/products//jacket-1.jpg"
+                  alt="Product 4"
+                  class="w-32 h-32 object-cover"
+                />
+              </div>
+              <div
+                class="product-content-box p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 class="product-title text-lg font-semibold mb-2">
+                    Product 4
+                  </h3>
+                  <p class="product-price text-gray-700">$79.99</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn bg-blue-500 text-white py-2 px-4 rounded-lg text-sm mt-2 hover:bg-blue-600"
+                  >View Product</a
+                >
+              </div>
+            </div>
+          </div>
+          <section
+            class="container grid gap-4 my-24 md:grid-cols-2 lg:grid-cols-4"
+          >
+            <div class="flex items-center gap-8 p-8 bg-white rounded-lg">
+              <img
+                src="./img/icons/box.svg"
+                width="60"
+                height="60"
+                alt="Free Shipping"
+                loading="lazy"
+              />
+              <div>
+                <h3 class="text-xl font-semibold">Free Shipping</h3>
+                <p class="text-sm">Free shipping on orders over €50</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-8 p-8 bg-white rounded-lg">
+              <img
+                src="./img/icons/moneyback.svg"
+                width="60"
+                height="60"
+                alt="Money Back"
+                loading="lazy"
+              />
+              <div>
+                <h3 class="text-xl font-semibold">Peace of Mind</h3>
+                <p class="text-sm">30 days money back guarantee</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-8 p-8 bg-white rounded-lg">
+              <img
+                src="./img/icons/secure.svg"
+                width="60"
+                height="60"
+                alt="Secure Payment"
+                loading="lazy"
+              />
+              <div>
+                <h3 class="text-xl font-semibold">100% Payment Secure</h3>
+                <p class="text-sm">Your payments are safe with us.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-8 p-8 bg-white rounded-lg">
+              <img
+                src="./img/icons/support.svg"
+                width="60"
+                height="60"
+                alt="Support 24/7"
+                loading="lazy"
+              />
+              <div>
+                <h3 class="text-xl font-semibold">Support 24/7</h3>
+                <p class="text-sm">24/7 Online support</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let index = 0;
+      const slider = document.getElementById("slider");
+      const totalSlides = document.querySelectorAll("#slider > div").length;
+
+      setInterval(() => {
+        index = (index + 1) % totalSlides;
+        slider.style.transform = `translateX(-${index * 100}%)`;
+      }, 3000);
+    </script>
+  </body>
+</html>
